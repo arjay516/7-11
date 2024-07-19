@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Eleven Registration</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="assets/imgs/header_bg.fw.png" alt="7-Eleven Logo">
+    </div>
+
+    <div class="nav-box">
+        <a href="#">Praesentium</a>
+        <a href="#">Voluptatum</a>
+        <a href="#">Dignissimos</a>
+        <a href="#">Blanditiis</a>
+    </div>
+
+    <div class="content">
+        <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem sit amet tempor</h2>
+        <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
+
+        <div class="form-container">
+            <h3>Registration Form</h3>
+            <form action="#">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <select id="dob-month" name="dob-month">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <!-- Add other months -->
+                    </select>
+                    <select id="dob-day" name="dob-day">
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <!-- Add other days -->
+                    </select>
+                    <select id="dob-year" name="dob-year">
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <!-- Add other years -->
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Proin sit amet lectus venenatis, consectetur magna vitae, convallis diam. Nullam iaculis.</label>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <h4>Suspendisse</h4>
+            <p>Quisque Faucibus Sapien Hendrerit</p>
+        </div>
+        <div>
+            <h4>Porta</h4>
+            <p>Mauris Suscipit At Ipsum Vehicula</p>
+        </div>
+        <div>
+            <h4>Feugiat</h4>
+            <p>Pellentesque Accumsan Velit in urna Faucibus</p>
+        </div>
+        <div>
+            <h4>Placerat</h4>
+            <p>Vitae Convallis Augue Aliquam</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
