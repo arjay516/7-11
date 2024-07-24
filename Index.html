@@ -1,82 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7-Eleven Registration</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7-Eleven Registration</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
 
-    <div class="header">
-        <img src="assets/imgs/header_bg.fw.png" alt="7-Eleven Logo">
-    </div>
-
-    <div class="nav-box">
-        <a href="#">Praesentium</a>
-        <a href="#">Voluptatum</a>
-        <a href="#">Dignissimos</a>
-        <a href="#">Blanditiis</a>
-    </div>
-
-    <div class="content">
-        <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem sit amet tempor</h2>
-        <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
-
-        <div class="form-container">
-            <h3>Registration Form</h3>
-            <form action="#">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <div>
-                    <label for="dob">Date of Birth:</label>
-                    <select id="dob-month" name="dob-month">
-                        <option value="01">January</option>
-                        <option value="02">February</option>
-                        <option value="03">March</option>
-                        <!-- Add other months -->
-                    </select>
-                    <select id="dob-day" name="dob-day">
-                        <option value="01">1</option>
-                        <option value="02">2</option>
-                        <option value="03">3</option>
-                        <!-- Add other days -->
-                    </select>
-                    <select id="dob-year" name="dob-year">
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <!-- Add other years -->
-                    </select>
-                </div>
-                <div>
-                    <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms">Proin sit amet lectus venenatis, consectetur magna vitae, convallis diam. Nullam iaculis.</label>
-                </div>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="header">
+            <img src="assets/imgs/NXTLVL_WEBDEB_711_Banner.png" alt="7-Eleven Logo">
         </div>
-    </div>
 
-    <div class="footer">
-        <div>
-            <h4>Suspendisse</h4>
-            <p>Quisque Faucibus Sapien Hendrerit</p>
+        <div class="nav-box">
+            <a href="#">Praesentium</a>
+            <a href="#">Voluptatum</a>
+            <a href="#">Dignissimos</a>
+            <a href="#">Blanditiis</a>
         </div>
-        <div>
-            <h4>Porta</h4>
-            <p>Mauris Suscipit At Ipsum Vehicula</p>
-        </div>
-        <div>
-            <h4>Feugiat</h4>
-            <p>Pellentesque Accumsan Velit in urna Faucibus</p>
-        </div>
-        <div>
-            <h4>Placerat</h4>
-            <p>Vitae Convallis Augue Aliquam</p>
-        </div>
-    </div>
 
-    <script src="assets/js/script.js"></script>
-</body>
+        <div class="content">
+            <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem sit amet tempor</h2>
+            <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
+
+            <div class="form-container">
+                <h3>Registration Form</h3>
+                <form action="#">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="number" id="number" name="number" placeholder="Mobile Number" required>
+                    <div class="dateofbirth">
+                        <label for="dob">Date of Birth:</label>
+                        <select id="dob-month" name="dob-month">
+                            <option value="">Month</option>
+                        </select>
+                        <select id="dob-day" name="dob-day">
+                            <option value="">Day</option>
+                        </select>
+                        <select id="dob-year" name="dob-year">
+                            <option value="">Year</option>
+                        </select>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender</label>
+                        <div class="malefemale">
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="termscheckbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label class="terms" for="terms">Proin sit amet lectus venenatis, consectetur magna vitae, convallis diam. Nullam iaculis.</label>
+                    </div>
+                    <div>
+                        <img class="cards" src="assets/imgs/cards.png" alt="">
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footerlinks">
+                <h4>Suspendisse</h4>
+                <p>Quisque <br>Faucibus <br>Sapien <br>Hendrerit</p>
+            </div>
+            <div class="footerlinks">
+                <h4>Porta</h4>
+                <p>Mauris <br>Suscipit <br>At Ipsum <br>Vehicula</p>
+            </div>
+            <div class="footerlinks">
+                <h4>Feugiat</h4>
+                <p>Pellentesque <br>Accumsan <br>Velit in urna <br>Faucibus</p>
+            </div>
+            <div class="footerlinks">
+                <h4>Placerat</h4>
+                <p>Vitae <br>Convallis <br>Augue <br>Aliquam</p>
+            </div>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+    <script>
+        // Function to populate the month dropdown
+        function populateMonths() {
+            var monthSelect = document.getElementById('dob-month');
+            var months = [
+                { value: '01', text: 'January' },
+                { value: '02', text: 'February' },
+                { value: '03', text: 'March' },
+                { value: '04', text: 'April' },
+                { value: '05', text: 'May' },
+                { value: '06', text: 'June' },
+                { value: '07', text: 'July' },
+                { value: '08', text: 'August' },
+                { value: '09', text: 'September' },
+                { value: '10', text: 'October' },
+                { value: '11', text: 'November' },
+                { value: '12', text: 'December' }
+            ];
+
+            months.forEach(function(month) {
+                var option = document.createElement('option');
+                option.value = month.value;
+                option.text = month.text;
+                monthSelect.appendChild(option);
+            });
+        }
+
+        // Function to populate the day dropdown (assuming 31 days for simplicity)
+        function populateDays() {
+            var daySelect = document.getElementById('dob-day');
+            for (var day = 1; day <= 31; day++) {
+                var option = document.createElement('option');
+                option.value = day < 10 ? '0' + day : '' + day; // Add leading zero for single-digit days
+                option.text = day < 10 ? '0' + day : '' + day;
+                daySelect.appendChild(option);
+            }
+        }
+
+        // Function to populate the year dropdown (from current year to 100 years ago)
+        function populateYears() {
+            var yearSelect = document.getElementById('dob-year');
+            var currentYear = new Date().getFullYear();
+            for (var year = currentYear; year >= currentYear - 100; year--) {
+                var option = document.createElement('option');
+                option.value = year;
+                option.text = year;
+                yearSelect.appendChild(option);
+            }
+        }
+
+        // Call the functions to populate the dropdowns
+        populateMonths();
+        populateDays();
+        populateYears();
+    </script>
 </html>
